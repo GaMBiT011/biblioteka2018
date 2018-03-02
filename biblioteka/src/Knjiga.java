@@ -1,10 +1,19 @@
 
 public class Knjiga {
-	private String naslov, isbn, izdavac, autori;
+	private String naslov, isbn, izdavac;
 	private int izdanje;
+	private Autor[] autori;
 
 	public String getNaslov() {
 		return naslov;
+	}
+
+	public Autor[] getAutori() {
+		return autori;
+	}
+
+	public void setAutori(Autor[] autori) {
+		this.autori = autori;
 	}
 
 	public void setNaslov(String naslov) {
@@ -27,13 +36,7 @@ public class Knjiga {
 		this.izdavac = izdavac;
 	}
 
-	public String getAutori() {
-		return autori;
-	}
 
-	public void setAutori(String autori) {
-		this.autori = autori;
-	}
 
 	public int getIzdanje() {
 		return izdanje;
